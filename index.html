@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .poto_project {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body style="background-color: white; margin: 0; height: max-content;">
+
+
+
+    <div class="Form_Input_Project"
+        style="width:100% ; height:max-content; background-color:rgb(153, 145, 145); padding-bottom: 100px; margin:0 ">
+        <nav style="background-color: rgb(241, 235, 235); ">
+            <ul class=" navbar_item">
+                <li><img src="brandred.png" style="width: 50px; padding-right: 20px;"></li>
+                <li><a href="" style="color:black ;">Home</a></li>
+                <li><a href="" class="blog" style="width:max-content;">My Project</a></li>
+                <li style="width: 100% ; display: flex; justify-content: flex-end;">
+                    <button class="btn-contact"
+                        style="background-color:black ; border-color: black; color: white; border-radius: 5px; ">Contact
+                        Me</button>
+                </li>
+            </ul>
+        </nav>
+
+        <h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; ">ADD MY PROJECT
+        </h1>
+
+        <div style=" width:max-content; margin-left: 30%; ">
+            <div>
+                <label class="label">Project Name</label>
+            </div>
+
+            <div>
+                <input type="text" class="input" style="width:550px" id="project">
+            </div>
+
+            <div class="date" style="display:flex; margin-top: 10px;">
+                <div class="Start_Date">
+                    <div>
+                        <label class="label">Start Date</label>
+                    </div>
+                    <div>
+                        <input type="date" id="start_date" class="input" style="width:255px;">
+                    </div>
+                </div>
+
+                <div class="End_Date" style="margin-left:30px ;">
+                    <div>
+                        <label class="label">End Date</label>
+                    </div>
+                    <div>
+                        <input type="date" id="end_date" class="input" style="width:255px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="Description" style="margin-top: 10px;">
+                <div>
+                    <label class="label">Description</label>
+                </div>
+                <div>
+
+                    <textarea name="" id="description" cols="48" rows="6"></textarea>
+                </div>
+            </div>
+
+            <div class="Tech" style="margin-top: 10px;">
+
+                <div>
+                    <label class="label">Technologies</label>
+                </div>
+
+                <div class="checkbox" style="margin-top: 10px; ">
+                    <input type="checkbox" id="node_js">Node. Js
+                    <input type="checkbox" style="margin-left: 100px ;" id="next_js">Next. Js
+                </div>
+
+                <div class="checkbox" style="margin-top: 10px;  ">
+                    <input type="checkbox" id="react_js">React Js
+                    <input type="checkbox" style="margin-left: 101px ;" id="typescript">TypeScript
+                </div>
+
+            </div>
+
+            <div class="Image" style="margin-top: 10px;">
+                <div>
+                    <label class="label">Upload Image</label>
+                </div>
+                <div style="display:flex;">
+
+                    <input type="file" id="img_id" style="background-color: white ; font-size:large; width:554px"
+                        required>
+                </div>
+
+            </div>
+
+            <div class="button" style="margin-top: 25px;">
+                <button class="button_submit" type="button" style="margin-left: 454px; width: 100px; height: 30px;"
+                    onclick="renderContent()">submit</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div style="width:100% ; height:max-content; background-color:white; padding-bottom: 60px; ">
+        <h1 style="text-align:center ; margin-top:60px;">MY PROJECT</h1>
+
+        <div style="width: 80%; background-color:white; margin:auto; height:max-content;margin-top: 40px; display: flex;"
+            id="content">
+            <!--naruto-->
+
+
+            <!-- <div
+                style="width: 40%; margin-right: 20px; box-shadow: 1px 1px 10px; height:max-content; padding-bottom: 15px; border-radius: 10px;">
+
+                <a href="blog.html"><img class="poto_project" src="naruto.png"
+                        style="width: 95%; border-radius: 10px; display: block; margin-top: 10px; height: 220px;"></a>
+                <h3 style="font-family:Arial, Helvetica, sans-serif ; margin-left: 10px; ">
+                    Dumbways Mobile App - 2021
+                </h3>
+                <div class="durasi" style="display:flex; margin-left: 10px; ">
+                    <p class="p_duration" style="font-family:Arial, Helvetica, sans-serif ;">Duration : </p>
+                    <p class="p_duration" style="font-family:Arial, Helvetica, sans-serif ;" id="count_day">6</p>
+                    <p class="p_duration" style="font-family:Arial, Helvetica, sans-serif ;" id="date_status">days
+                    </p>
+                </div>
+
+                <p
+                    style="font-family:sans-serif; text-align: justify; margin-left: 10px; margin-right: 100px; margin-top: 15px;">
+                    App that use for dumbways student, it was
+                    deployed and can downloaded on playstore.
+                    Happy download
+                </p>
+
+                <img class="icon" src="react_js.png" style="width: 30px;">
+                <img class="icon" src="node_js.png" style="width: 30px;">
+                <div class="button">
+                    <button
+                        style="width: 47%; border-radius: 10px; height: 30px; margin-right: 5px; color: white; background-color: black;">edit</button>
+                    <button
+                        style="width: 47%; border-radius: 10px; height: 30px; color: white; background-color: black;">delete</button>
+                </div>
+            </div> -->
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
